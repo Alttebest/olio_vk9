@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_marginTop="5dp"
+    android:background="#B317CF"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/imageUser"
+        android:layout_width="213dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:contentDescription="UserImage"
+        app:srcCompat="@android:drawable/ic_delete" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Koko Nimi"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Sähköposti" />
+
+        <TextView
+            android:id="@+id/textDegreeType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tutkinto" />
+    </LinearLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>
